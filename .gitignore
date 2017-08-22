@@ -1,4 +1,5 @@
 ponzu-server
 uploads
-search
 *.db
+.idea
+**.pem

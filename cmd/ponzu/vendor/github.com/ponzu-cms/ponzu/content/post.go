@@ -15,6 +15,7 @@ type Post struct {
 	item.Item
 
 	Title string `json:"title"`
+	Image string `json:"image"`
 	Body  string `json:"body"`
 }
 
@@ -30,6 +31,13 @@ func (p *Post) MarshalEditor() ([]byte, error) {
 				"label":       "Title",
 				"type":        "text",
 				"placeholder": "Enter the Title here",
+			}),
+		},
+		editor.Field{
+			View: editor.Input("Image", p, map[string]string{
+				"label":       "Image",
+				"type":        "text",
+				"placeholder": "Enter the image path here",
 			}),
 		},
 		editor.Field{
