@@ -3,3 +3,4 @@ uploads
 *.db
 .idea
 **.pem
+.DS_Store
